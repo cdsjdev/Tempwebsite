@@ -275,8 +275,10 @@ a.contact-line:hover strong { color: var(--primary); }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
-  .marquee-track, .scroll-cue { animation: none; }
+  .scroll-cue { animation: none; }
   html { scroll-behavior: auto; }
+  /* Keep the marquee moving, but gentler, for reduced-motion users */
+  .marquee-track { animation-duration: 60s; }
 }
 
 /* ============ Responsive ============ */
