@@ -4,335 +4,166 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modern Stay Heliosa — Boutique apartment near Gdańsk</title>
-  <meta name="description" content="Modern Stay Heliosa — a boutique ground-floor apartment with a private garden in Kowale, minutes from Gdańsk. Sleeps 4. 5.00★ across 46 reviews." />
+  <meta name="description" content="Modern Stay Heliosa — a boutique ground-floor apartment with a private garden in Kowale, minutes from Gdańsk. Sleeps 4. Rated 5.00 across 46 reviews." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Progress bar -->
   <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- Header -->
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a href="#top" class="brand">
-        <span class="brand-mark">◒</span>
-        <span class="brand-text">Modern&nbsp;Stay <em>Heliosa</em></span>
+      <a href="index.html" class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text">Modern Stay <em>Heliosa</em></span>
       </a>
-      <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#gallery">Photos</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Reserve</a>
+      <nav class="nav">
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="photos.html">Photos</a>
+          <a href="contact.html">Contact</a>
+          <a href="reserve.html" class="btn btn-sm btn-primary nav-cta">Reserve</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero" id="top">
-    <div class="hero-glow"></div>
+  <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
         <p class="eyebrow reveal">Kowale · near Gdańsk, Poland</p>
-        <h1 class="reveal">
-          Modern Stay<br /><span class="grad">Heliosa</span>
-        </h1>
+        <h1 class="reveal">Modern Stay <span class="grad">Heliosa</span></h1>
         <p class="hero-sub reveal">Quiet mornings, a private garden, and easy access to Gdańsk. A boutique apartment designed for slow stays and effortless getaways.</p>
         <div class="hero-actions reveal">
-          <a href="#contact" class="btn btn-primary">Check availability</a>
-          <a href="#gallery" class="btn btn-ghost">See the apartment</a>
+          <a href="reserve.html" class="btn btn-primary">Check availability</a>
+          <a href="photos.html" class="btn btn-ghost">See the apartment</a>
         </div>
         <div class="hero-stats reveal">
-          <div class="stat">
-            <span class="stat-num">5.00<span class="star">★</span></span>
-            <span class="stat-label">46 reviews</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">Sleeps 4</span>
-            <span class="stat-label">1 bed · 2 beds</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">37 m²</span>
-            <span class="stat-label">Private garden</span>
-          </div>
+          <div class="stat"><span class="stat-num">5.00<span class="star">★</span></span><span class="stat-label">46 reviews</span></div>
+          <div class="stat"><span class="stat-num">Sleeps 4</span><span class="stat-label">1 bed · 2 beds</span></div>
+          <div class="stat"><span class="stat-num">37 m²</span><span class="stat-label">Private garden</span></div>
         </div>
       </div>
-      <div class="hero-card reveal">
-        <div class="hero-card-media">
-          <img src="images/living-01.jpeg" alt="Living room with sofa" loading="eager" />
-          <div class="floor-badge">Ground floor · Garden access</div>
-        </div>
-        <div class="hero-card-body">
-          <div class="rating-row">
-            <div class="platform">
-              <span class="platform-name">Airbnb</span>
-              <span class="platform-score">5.0<small>/5</small></span>
-              <span class="platform-meta">15 reviews · Superhost</span>
-            </div>
-            <div class="platform">
-              <span class="platform-name">Booking.com</span>
-              <span class="platform-score">10<small>/10</small></span>
-              <span class="platform-meta">31 reviews</span>
-            </div>
-          </div>
+      <div class="hero-figure reveal">
+        <div class="hero-img"><img src="images/living-01.jpeg" alt="Living room with sofa" loading="eager" /></div>
+        <div class="hero-badge">
+          <span class="score">5.0</span>
+          <span class="score-meta"><strong>Airbnb Superhost</strong>15 reviews · Booking 10/10</span>
         </div>
       </div>
     </div>
-    <a href="#about" class="scroll-cue" aria-label="Scroll down">↓</a>
+    <a href="#intro" class="scroll-cue" aria-label="Scroll down">↓</a>
   </section>
 
   <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>Private garden</span><span>·</span>
-      <span>Fully-equipped kitchen</span><span>·</span>
-      <span>Fast Wi-Fi</span><span>·</span>
-      <span>20 min to the city centre</span><span>·</span>
-      <span>Superhost</span><span>·</span>
-      <span>Spotless &amp; modern</span><span>·</span>
-      <span>Private garden</span><span>·</span>
-      <span>Fully-equipped kitchen</span><span>·</span>
-      <span>Fast Wi-Fi</span><span>·</span>
-      <span>20 min to the city centre</span><span>·</span>
-      <span>Superhost</span><span>·</span>
-      <span>Spotless &amp; modern</span><span>·</span>
+      <span>Private garden</span><span>·</span><span>Fully-equipped kitchen</span><span>·</span><span>Fast Wi-Fi</span><span>·</span><span>20 min to the city centre</span><span>·</span><span>Superhost</span><span>·</span><span>Spotless &amp; modern</span><span>·</span>
+      <span>Private garden</span><span>·</span><span>Fully-equipped kitchen</span><span>·</span><span>Fast Wi-Fi</span><span>·</span><span>20 min to the city centre</span><span>·</span><span>Superhost</span><span>·</span><span>Spotless &amp; modern</span><span>·</span>
     </div>
   </div>
 
-  <!-- About -->
-  <section class="section about" id="about">
+  <!-- Intro / About preview -->
+  <section class="section" id="intro">
     <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="images/garden-01.jpeg" alt="Private garden with seating" loading="lazy" />
+        <img src="images/kitchen-01.jpeg" alt="Kitchen detail" loading="lazy" />
+      </div>
       <div class="about-copy reveal">
         <p class="eyebrow">The apartment</p>
         <h2>A ground-floor retreat with its own garden.</h2>
-        <p class="lead">
-          Thirty-seven square metres of calm, thoughtfully arranged for two to four guests.
-          Step straight out to a private garden, cook in a fully-equipped kitchen, and settle
-          in for leisure or focused work — all a short drive from Gdańsk Old Town, the beach,
-          and the airport.
-        </p>
+        <p class="lead">Thirty-seven square metres of calm, thoughtfully arranged for two to four guests. Step straight out to a private garden, cook in a fully-equipped kitchen, and settle in for leisure or focused work — all a short drive from Gdańsk Old Town, the beach, and the airport.</p>
         <ul class="feature-list">
           <li><span class="dot"></span> Sleeps 4 · one bedroom with two beds</li>
           <li><span class="dot"></span> Private ground-floor garden</li>
           <li><span class="dot"></span> Fully-equipped modern kitchen</li>
           <li><span class="dot"></span> New appliances, spotless throughout</li>
         </ul>
-      </div>
-      <div class="amenities reveal">
-        <h3>Ready on arrival</h3>
-        <p class="amenities-sub">Little touches that guests keep mentioning.</p>
-        <div class="amenity-grid">
-          <div class="amenity"><span class="amenity-ico">⌁</span>Fast Wi-Fi</div>
-          <div class="amenity"><span class="amenity-ico">✿</span>Private garden</div>
-          <div class="amenity"><span class="amenity-ico">☕</span>Full kitchen</div>
-          <div class="amenity"><span class="amenity-ico">⚡</span>Chargers provided</div>
-          <div class="amenity"><span class="amenity-ico">☙</span>Slippers</div>
-          <div class="amenity"><span class="amenity-ico">✦</span>Spare toothbrushes</div>
-          <div class="amenity"><span class="amenity-ico">◍</span>Kids' plates</div>
-          <div class="amenity"><span class="amenity-ico">♨</span>New appliances</div>
-        </div>
+        <p style="margin-top:2rem"><a href="about.html" class="btn btn-ghost">More about the stay</a></p>
       </div>
     </div>
   </section>
 
   <!-- Location -->
-  <section class="section location">
+  <section class="section section-tint">
     <div class="container">
-      <div class="reveal loc-head">
+      <div class="section-head reveal">
         <p class="eyebrow">Getting around</p>
         <h2>Minutes from everything that matters.</h2>
       </div>
       <div class="loc-grid">
-        <div class="loc-card reveal">
-          <span class="loc-time">~20 min</span>
-          <span class="loc-name">Gdańsk city centre</span>
-          <span class="loc-desc">Old Town, restaurants and the riverside promenade.</span>
-        </div>
-        <div class="loc-card reveal">
-          <span class="loc-time">Short drive</span>
-          <span class="loc-name">The beach</span>
-          <span class="loc-desc">Baltic coastline and seaside walks.</span>
-        </div>
-        <div class="loc-card reveal">
-          <span class="loc-time">Short drive</span>
-          <span class="loc-name">Gdańsk Airport</span>
-          <span class="loc-desc">Effortless arrivals and departures.</span>
-        </div>
-        <div class="loc-card reveal">
-          <span class="loc-time">On foot</span>
-          <span class="loc-name">Shops &amp; essentials</span>
-          <span class="loc-desc">Everyday conveniences right nearby.</span>
-        </div>
+        <div class="loc-card reveal"><span class="loc-time">~20 min</span><span class="loc-name">Gdańsk city centre</span><span class="loc-desc">Old Town, restaurants and the riverside promenade.</span></div>
+        <div class="loc-card reveal"><span class="loc-time">Short drive</span><span class="loc-name">The beach</span><span class="loc-desc">Baltic coastline and seaside walks.</span></div>
+        <div class="loc-card reveal"><span class="loc-time">Short drive</span><span class="loc-name">Gdańsk Airport</span><span class="loc-desc">Effortless arrivals and departures.</span></div>
+        <div class="loc-card reveal"><span class="loc-time">On foot</span><span class="loc-name">Shops &amp; essentials</span><span class="loc-desc">Everyday conveniences right nearby.</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="section gallery" id="gallery">
+  <!-- Reviews preview -->
+  <section class="section">
     <div class="container">
-      <div class="reveal gal-head">
-        <p class="eyebrow">Photos</p>
-        <h2>Take a look inside.</h2>
-      </div>
-      <div class="gallery-grid">
-        <figure class="gal-item gal-lg reveal">
-          <img src="images/living-02.jpeg" alt="Living room and open kitchen" loading="lazy" />
-          <figcaption>Living space</figcaption>
-        </figure>
-        <figure class="gal-item reveal">
-          <img src="images/bedroom-02.jpeg" alt="Bedroom with bed" loading="lazy" />
-          <figcaption>Bedroom</figcaption>
-        </figure>
-        <figure class="gal-item reveal">
-          <img src="images/kitchen-01.jpeg" alt="Kitchen detail" loading="lazy" />
-          <figcaption>Kitchen</figcaption>
-        </figure>
-        <figure class="gal-item gal-wide reveal">
-          <img src="images/garden-01.jpeg" alt="Private garden with seating" loading="lazy" />
-          <figcaption>Private garden</figcaption>
-        </figure>
-        <figure class="gal-item reveal">
-          <img src="images/bathroom-01.jpeg" alt="Bathroom" loading="lazy" />
-          <figcaption>Bathroom</figcaption>
-        </figure>
-        <figure class="gal-item reveal">
-          <img src="images/living-03.jpeg" alt="Living room TV area" loading="lazy" />
-          <figcaption>Details</figcaption>
-        </figure>
-        <figure class="gal-item reveal">
-          <img src="images/kitchen-03.jpeg" alt="Kitchen and hallway" loading="lazy" />
-          <figcaption>Kitchen &amp; hallway</figcaption>
-        </figure>
-        <figure class="gal-item reveal">
-          <img src="images/bedroom-01.jpeg" alt="Bedroom cabinet" loading="lazy" />
-          <figcaption>Bedroom storage</figcaption>
-        </figure>
-        <figure class="gal-item reveal">
-          <img src="images/living-04.jpeg" alt="Living room with terrace access" loading="lazy" />
-          <figcaption>Terrace access</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reviews -->
-  <section class="section reviews" id="reviews">
-    <div class="container">
-      <div class="reveal rev-head">
+      <div class="section-head reveal">
         <p class="eyebrow">Guest reviews</p>
         <h2>Rated 5.00 across 46 stays.</h2>
       </div>
       <div class="review-grid">
         <blockquote class="review reveal">
-          <p>“Don't hesitate booking this place — our stay was absolutely great. The apartment was spotless and beautifully furnished.”</p>
+          <div class="stars">★★★★★</div>
+          <p>“Don't hesitate booking this place — our stay was absolutely great. Spotless and beautifully furnished.”</p>
           <footer><strong>Marie</strong><span>Airbnb</span></footer>
         </blockquote>
         <blockquote class="review reveal">
-          <p>“One of the best Airbnbs we've stayed in. Spotless, beautifully furnished and full of thoughtful touches.”</p>
+          <div class="stars">★★★★★</div>
+          <p>“One of the best Airbnbs we've stayed in. Full of thoughtful touches.”</p>
           <footer><strong>Fiyin</strong><span>Airbnb</span></footer>
         </blockquote>
         <blockquote class="review reveal">
-          <p>“Everything was very good, even great. I will definitely recommend your place to others.”</p>
-          <footer><strong>Jurijs</strong><span>Booking.com · Latvia</span></footer>
-        </blockquote>
-        <blockquote class="review reveal">
+          <div class="stars">★★★★★</div>
           <p>“Modern, clean and very functional. New appliances, everything well cared for.”</p>
           <footer><strong>Bartosz</strong><span>Booking.com · Poland</span></footer>
         </blockquote>
-        <blockquote class="review reveal">
-          <p>“Beautiful apartment, very high quality finish and excellent equipment throughout.”</p>
-          <footer><strong>Aleksandra</strong><span>Booking.com · Poland</span></footer>
-        </blockquote>
-        <blockquote class="review reveal">
-          <p>“Fantastic amenities, everything ready on arrival exactly as arranged.”</p>
-          <footer><strong>Szczeps</strong><span>Booking.com · Poland</span></footer>
-        </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- Contact / Reserve -->
-  <section class="section contact" id="contact">
-    <div class="container contact-inner">
-      <div class="contact-copy reveal">
+  <!-- Ratings band (navy) -->
+  <section class="section section-navy">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Trusted by guests</p>
+        <h2>Consistently five stars.</h2>
+      </div>
+      <div class="ratings-band">
+        <div class="platform-card reveal"><div class="p-name">Airbnb</div><div class="p-score">5.0<span style="font-size:1.2rem">/5</span></div><div class="p-meta">15 reviews · Superhost</div></div>
+        <div class="platform-card reveal"><div class="p-name">Booking.com</div><div class="p-score">10<span style="font-size:1.2rem">/10</span></div><div class="p-meta">31 reviews</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-band">
+    <div class="container">
+      <div class="reveal">
         <p class="eyebrow">Reserve</p>
-        <h2>Request to book.</h2>
-        <p class="lead">Send an inquiry with your dates — we'll reply within 24&nbsp;hours to confirm availability and pricing.</p>
-        <div class="contact-details">
-          <a href="tel:+48789099500" class="contact-line"><span>Phone</span>+48 789 099 500</a>
-          <a href="mailto:contact@modernstay.eu" class="contact-line"><span>Email</span>contact@modernstay.eu</a>
-          <p class="contact-line"><span>Address</span>Heliosa 22/1, 80-180 Kowale, Poland</p>
-        </div>
+        <h2>Your quiet stay near Gdańsk awaits.</h2>
+        <p>Send an inquiry with your dates — we'll reply within 24 hours to confirm availability and pricing.</p>
+        <a href="reserve.html" class="btn btn-primary">Request to book</a>
       </div>
-      <form class="contact-form reveal" id="bookingForm" novalidate>
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required />
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@email.com" required />
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="checkin">Check-in</label>
-            <input id="checkin" name="checkin" type="date" required />
-          </div>
-          <div class="field">
-            <label for="checkout">Check-out</label>
-            <input id="checkout" name="checkout" type="date" required />
-          </div>
-        </div>
-        <div class="field">
-          <label for="guests">Guests</label>
-          <select id="guests" name="guests">
-            <option>1 guest</option>
-            <option>2 guests</option>
-            <option>3 guests</option>
-            <option selected>4 guests</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="3" placeholder="Anything we should know?"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Send inquiry</button>
-        <p class="form-note" id="formNote" hidden>Thanks — we'll be in touch within 24 hours.</p>
-      </form>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="brand-mark">◒</span>
-        <span>Modern Stay <em>Heliosa</em></span>
-      </div>
-      <nav class="footer-nav">
-        <a href="#about">About</a>
-        <a href="#gallery">Photos</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Reserve</a>
-      </nav>
-      <p class="footer-copy">© 2026 Modern Stay — Heliosa · Kowale, Poland</p>
-    </div>
-  </footer>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
-    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
-    <img class="lb-img" id="lbImg" src="" alt="" />
-    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
-    <div class="lb-caption" id="lbCaption"></div>
-  </div>
+  <!-- Footer placeholder -->
+  <div id="footer"></div>
 
   <script src="script.js"></script>
 </body>

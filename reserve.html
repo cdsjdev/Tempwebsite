@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserve — Modern Stay Heliosa</title>
+  <meta name="description" content="Request to book Modern Stay Heliosa. Send an inquiry with your dates and we'll reply within 24 hours to confirm availability and pricing." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text">Modern Stay <em>Heliosa</em></span>
+      </a>
+      <nav class="nav">
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="photos.html">Photos</a>
+          <a href="contact.html">Contact</a>
+          <a href="reserve.html" class="btn btn-sm btn-primary nav-cta active">Reserve</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow reveal">Reserve</p>
+      <h1 class="reveal">Request to book.</h1>
+      <p class="reveal">Send an inquiry with your dates — we'll reply within 24 hours to confirm availability and pricing.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container contact-inner">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">The stay at a glance</p>
+        <h2>Everything you need for four.</h2>
+        <ul class="feature-list">
+          <li><span class="dot"></span> Sleeps 4 · 1 bedroom, 2 beds</li>
+          <li><span class="dot"></span> 37 m² ground floor · private garden</li>
+          <li><span class="dot"></span> Fully-equipped kitchen · fast Wi-Fi</li>
+          <li><span class="dot"></span> ~20 min to Gdańsk city centre</li>
+          <li><span class="dot"></span> 5.00 ★ across 46 reviews</li>
+        </ul>
+        <div class="contact-details">
+          <a href="tel:+48789099500" class="contact-line"><span>Phone</span><strong>+48 789 099 500</strong></a>
+          <a href="mailto:contact@modernstay.eu" class="contact-line"><span>Email</span><strong>contact@modernstay.eu</strong></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="bookingForm" novalidate>
+        <h3>Send an inquiry</h3>
+        <p class="form-sub">We'll get back to you within 24 hours.</p>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@email.com" required />
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="checkin">Check-in</label><input id="checkin" name="checkin" type="date" required /></div>
+          <div class="field"><label for="checkout">Check-out</label><input id="checkout" name="checkout" type="date" required /></div>
+        </div>
+        <div class="field">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests">
+            <option>1 guest</option><option>2 guests</option><option>3 guests</option><option selected>4 guests</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="3" placeholder="Anything we should know?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send inquiry</button>
+        <p class="form-note" id="formNote" hidden>Thanks — we'll be in touch within 24 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
